@@ -1,4 +1,4 @@
-#EN
+# EN.
 The code is organized into three separate cells. The first cell handles accessing folders, applying necessary initial steps, and generating a 1D vector. The middle cell contains the chosen algorithms and their results. The final cell is specifically dedicated to drawing the decision tree.
 
 As the first step, I defined two functions, "resize_image" and "min_max_normalization," to reduce the dimensions of the available data to the desired size (28x28) and convert them into a 1D vector while normalizing them. I labeled the data based on their groups and transferred them to an array, shuffling the data and labels using the "shuffle" function.
@@ -14,7 +14,7 @@ For the confusion matrix, I manually entered the functions for all classificatio
 For the decision tree, I created a separate Jupyter code cell to manually test and find ideal dimensions. Then, using the "DecisionTreeClassifier" function and Pyplot, I visualized the trained models based on the entropy value.
 
 
-#TR
+# TR.
 İlk hücre, klasörlere erişim sağlayıp gerekli ilk adım işlemlerini uygulayarak 1D vektör üreten kodları içermektedir. Ortadaki hücre, istenilen algoritmaları ve sonuçlarını içermektedir. Son hücre ise karar ağacını çizdirmek için özellikle ayrılmıştır.
 
 İlk adım olarak elimdeki verileri istenilen boyuta indirgeyip (28x28) 1D vektöre çeviren ve normalize etmemi sağlayacak iki adet fonksiyon tanımladım: resize_image ve min_max_normalization. Verileri kendi gruplarına göre etiketleyip bir diziye aktardım ve "shuffle" fonksiyonuyla veri ve etiketleri karıştırdım.
