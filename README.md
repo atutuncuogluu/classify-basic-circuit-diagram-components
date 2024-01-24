@@ -1,3 +1,20 @@
+***EN
+The code is organized into three separate cells. The first cell handles accessing folders, applying necessary initial steps, and generating a 1D vector. The middle cell contains the chosen algorithms and their results. The final cell is specifically dedicated to drawing the decision tree.
+
+As the first step, I defined two functions, "resize_image" and "min_max_normalization," to reduce the dimensions of the available data to the desired size (28x28) and convert them into a 1D vector while normalizing them. I labeled the data based on their groups and transferred them to an array, shuffling the data and labels using the "shuffle" function.
+
+For the 5-fold cross-validation algorithm, I used the "Kfold" function from the Sklearn library and assigned it to a variable since I will use this algorithm multiple times. For the KNN algorithm, I implemented a loop to use both the Euclidean and Manhattan distance metrics for each k value (3-5-7). Within this loop, I defined variables for training and testing data using the Kfold variable, and then added training, testing, and performance metrics to a table.
+
+For the decision tree, I utilized the "DecisionTreeClassifier" function from the Sklearn library and created a loop to calculate entropy and GINI values separately. In this loop, using the Kfold variable, I generated lists for training and testing. I also calculated training, testing times, and performance metrics within the same loop.
+
+I did not create a similar loop for Naive Bayes and SVM but instead used a list to record training, testing, and performance metric data. I created these using the "GaussianNB" and "SVC" functions. I printed the data in the list to the screen in a suitable format.
+
+For the confusion matrix, I manually entered the functions for all classification models separately at the end because the terminal output with the confusion matrix images would be quite extensive within the code. I ran these separately and saved the resulting images.
+
+For the decision tree, I created a separate Jupyter code cell to manually test and find ideal dimensions. Then, using the "DecisionTreeClassifier" function and Pyplot, I visualized the trained models based on the entropy value.
+
+
+
 Kodun tamamını 3 farklı hücreye ayrışmış şekilde içerir. İlk hücre klasörlere 
 erişim sağlayıp gerekli ilk adım işlemlerini uygulayıp 1D vektör üretecek kodları içerir. Son hücre 
 karar ağacını çizdirmek için özellikle ayrılmıştır. Ortadaki hücre ise istenilen algoritmaları ve 
